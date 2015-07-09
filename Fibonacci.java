@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class Fibonacci
 {
     public static double fibo(int i)
@@ -18,7 +19,9 @@ class Fibonacci
 
 public class Main {
     public static void main(String[] args) {
-        int number = 5;
+        System.out.println("Please enter a number: ");
+        Scanner in = new Scanner(System.in);
+        int number = in.nextInt();
         System.out.println("The " + number +  " of the fibonacci list is: " + Fibonacci.fibo(number));
         
 
